@@ -1,0 +1,77 @@
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: 120px repeat(5, auto);
+    padding: 10px;
+    grid-gap: 10px;
+    margin: 30px 100px;
+    width: 450px;
+    box-shadow: 0px 0px 7px 1px rgb(220, 220, 220);
+    /* border: 1px solid black; */
+}
+
+#displayer {
+    overflow-x: auto;
+    grid-area: 1 / 1 / 2 / 5;
+    line-height: 75px;
+    text-align: right;
+    font-size: 45px;
+    height: 100px;
+    border: 1px solid rgb(233, 233, 233);
+}
+
+#displayer:hover {
+    box-shadow: 0px 0px 5px 1px rgb(223, 223, 223);
+}
+
+.operator {
+    border: none;
+    line-height: 80px;
+    font-size: 30px;
+    background-color: rgb(217, 217, 217);
+}
+
+.number {
+    user-select: none;
+    line-height: 80px;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(241, 241, 241);
+}
+
+#cleaner {
+    user-select: none;
+    line-height: 80px;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(241, 241, 241);
+}
+
+.number:hover,
+.operator:hover,
+#cleaner:hover {
+    box-shadow: 0px 0px 5px 1px rgb(210, 210, 210);
+}
+
+.number:active,
+.operator:active,
+#cleaner:active {
+    font-size: 35px;
+}
+
+#equal {
+    user-select: none;
+    font-size: xx-large;
+    text-align: center;
+    line-height: 350px;
+    grid-area: 3 / 4 / 7 / 5;
+    background-color: rgb(50, 118, 255);
+}
+
+#equal:hover {
+    background-color: rgb(17, 79, 201);
+}
+
+#equal:active {
+    font-weight: 900;
+}
