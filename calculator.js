@@ -1,5 +1,5 @@
-window.onload = function() {
-
+window.onload = function () {
+    // declarations
     let displayer = document.getElementById("displayer");
     let numbers = document.getElementsByClassName("number");
     let operators = document.getElementsByClassName("operator");
@@ -11,7 +11,7 @@ window.onload = function() {
 
     for (let i of numbers) {
 
-        i.addEventListener("click", function() {
+        i.addEventListener("click", function () {
             if (currentValue == "0") {
                 currentValue = "";
             }
@@ -21,7 +21,7 @@ window.onload = function() {
     }
 
     for (let i of operators) {
-        i.addEventListener("click", function() {
+        i.addEventListener("click", function () {
 
             let lastChar = currentValue[currentValue.length - 1]
 
@@ -36,13 +36,13 @@ window.onload = function() {
 
     }
 
-    equal.addEventListener("click", function() {
+    equal.addEventListener("click", function () {
         currentValue = eval(currentValue);
         displayer.innerHTML = currentValue
         console.log(currentValue);
     })
 
-    cleaner.addEventListener("click", function() {
+    cleaner.addEventListener("click", function () {
         currentValue = 0;
         displayer.innerHTML = currentValue;
     })
